@@ -1,3 +1,4 @@
+// This allows us to use a dotenv file to keep our secrets
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
@@ -31,7 +32,9 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // GraphCMS
+
+
+    // Using GraphCMS As a Source for data
     {
       resolve: "gatsby-source-graphql",
       options: {
@@ -43,6 +46,17 @@ module.exports = {
         url: process.env.GRAPH_CMS_API,
       },
     },
+
+    // Using The Filesystem as our data source
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/posts`,
+        name: 'posts'
+      }
+    }
+
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
