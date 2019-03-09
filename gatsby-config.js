@@ -34,8 +34,8 @@ module.exports = {
     },
 
 
-    // Using GraphCMS As a Source for data
-    {
+    // ? Using GraphCMS As a Source for data
+    /*{
       resolve: "gatsby-source-graphql",
       options: {
         // The top level query type, can be anything you want!
@@ -45,16 +45,19 @@ module.exports = {
         // Your API endpoint, available from the dashboard and settings window.
         url: process.env.GRAPH_CMS_API,
       },
-    },
+    },*/
 
-    // Using The Filesystem as our data source
+    // ? Using The Filesystem as our data source
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/posts`,
         name: 'posts'
       }
-    }
+    },
+
+    // ? Transform Markdown into usable code
+    'gatsby-transformer-remark',
 
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
