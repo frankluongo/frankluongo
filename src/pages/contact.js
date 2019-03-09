@@ -1,10 +1,10 @@
 import React from 'react'
 import Layout from "../components/layout"
 
-const AboutMe = () => (
+const Contact = () => (
   <Layout>
     <div>
-      <h1>This is about us</h1>
+      <h1>This da contact page</h1>
       <p>
         This is me
       </p>
@@ -12,4 +12,4 @@ const AboutMe = () => (
   </Layout>
 )
 
-export default AboutMe;
+export default Contact;
