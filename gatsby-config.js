@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Frank Luongo | Web Designer & Developer`,
+    description: `I'm a Full-stack Web Developer and Designer with over 5 years of experience in the field. I have experience building websites and applications with WordPress, Elixir/Phoenix, Ruby on Rails, HTML5, CSS3, Sass, JavaScript, React and Vue. I also spent several years designing in Adobe Photoshop, Adobe Illustrator and Sketch as well as doing UI/UX Design via user testing, user studies, and writing product requirements.`,
     author: `@gatsbyjs`,
   },
   plugins: [
