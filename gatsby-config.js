@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `Frank Luongo | Web Designer & Developer`,
@@ -25,6 +29,18 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    // GraphCMS
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        // The top level query type, can be anything you want!
+        typeName: "GCMS",
+        // The field you'll query against, can also be anything you want.
+        fieldName: "gcms",
+        // Your API endpoint, available from the dashboard and settings window.
+        url: process.env.GRAPH_CMS_API,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
