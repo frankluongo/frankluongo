@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Frank Luongo | Web Designer & Developer`,
     description: `I'm a Full-stack Web Developer and Designer with over 5 years of experience in the field. I have experience building websites and applications with WordPress, Elixir/Phoenix, Ruby on Rails, HTML5, CSS3, Sass, JavaScript, React and Vue. I also spent several years designing in Adobe Photoshop, Adobe Illustrator and Sketch as well as doing UI/UX Design via user testing, user studies, and writing product requirements.`,
-    author: `@gatsbyjs`,
+    author: `@frankluongo`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
