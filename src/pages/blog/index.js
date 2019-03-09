@@ -1,37 +1,36 @@
 import React from 'react'
 import Layout from "../../components/layout"
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
+
+// * Default Export
+// ? ------------------------------------------------------
 
 const BlogIndex = () => {
 
-  const { allMarkdownRemark } = useStaticQuery(
-    graphql`
-      query BlogPosts {
-        allMarkdownRemark {
-          totalCount
-          edges {
-            node {
-              excerpt
-              frontmatter {
-                title
-                slug
-              }
-            }
-          }
-        }
-      }
-    `
-  )
+// * Queries
+// ? ------------------------------------------------------
+
+  const { allMarkdownRemark } = useStaticQuery(POSTS_QUERY)
+
+// * Helper Functions
+// ? ------------------------------------------------------
 
   const GetallPosts = (props) => {
     let {allMarkdownRemark} = props;
     let list = allMarkdownRemark.edges.map((edge, index) => (
-      <li key={index}>{edge.node.frontmatter.title}</li>
+      <li key={index}>
+        <Link to={`/blog${edge.node.frontmatter.slug}`}>
+          {edge.node.frontmatter.title}
+        </Link>
+      </li>
     ))
     return (
       <>{list}</>
     )
   }
+
+// * Return
+// ? ------------------------------------------------------
 
   return (
     <Layout>
@@ -42,5 +41,22 @@ const BlogIndex = () => {
     </Layout>
   )
 }
+
+const POSTS_QUERY = graphql`
+query BlogPosts {
+  allMarkdownRemark {
+    totalCount
+    edges {
+      node {
+        excerpt
+        frontmatter {
+          title
+          slug
+        }
+      }
+    }
+  }
+}
+`;
 
 export default BlogIndex;
