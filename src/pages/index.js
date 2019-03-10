@@ -3,11 +3,14 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Intro from "../components/homepage/intro";
+import Listing from "../components/listing";
 import { Heading2 } from "../Styles/elements/Headings";
+
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <Listing />
     <Intro />
     {/* About Me Section */}
 

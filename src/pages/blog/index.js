@@ -59,4 +59,5 @@ query BlogPosts {
 }
 `;
 
+
 export default BlogIndex;
