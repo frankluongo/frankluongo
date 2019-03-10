@@ -58,6 +58,7 @@ module.exports = {
 
     // ? Transform Markdown into usable code
     'gatsby-transformer-remark',
+    `gatsby-plugin-styled-components`,
 
 
     // this (optional) plugin enables Progressive Web App + Offline functionality

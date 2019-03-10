@@ -1,26 +1,19 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-
+import styled from 'styled-components';
 import Logo from '../icons/logo';
 import Menu from './menu';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `white`,
-      borderBottom: `1px solid #eee`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
+import { Container } from '../Styles/elements/Container';
+
+const Header = ({ className }) => (
+  <header className={className} >
+    <Container
       style={{
         display: `flex`,
         justifyContent: `stretch`,
         alignItems: `center`,
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
       }}
     >
     <Link to="/" style={{ textDecoration: `none` }} >
@@ -28,7 +21,7 @@ const Header = ({ siteTitle }) => (
     </Link>
     <Menu />
 
-    </div>
+    </Container>
   </header>
 )
 
@@ -40,4 +33,9 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default styled(Header)`
+  margin-bottom: 1.45rem;
+
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+`;
