@@ -2,47 +2,37 @@ import React from "react"
 import styled from 'styled-components';
 import myface from "../../images/alt-portrait.jpg"
 import { Heading1, Heading2 } from "../../Styles/elements/Headings";
+import { Paragraph } from "../../Styles/elements/Paragraphs";
 import { spacing } from "../../Styles/utilities/Variables";
 import { above } from '../../Styles/utilities/Breakpoints';
-import { Link } from "gatsby";
+
+import { Container, Wrapper } from "../../Styles/elements/Container"
+
+import ContactLink from 'src/components/Global/ContactLink';
 
 const Intro = () => {
 
   return (
-    <ContentWrapper>
-      <AboutMeImage />
+    <Wrapper>
+      <ContentContainer>
+        <AboutMeImage />
 
-    <div>
-      <Heading1>Hi, I'm Frank Luongo</Heading1>
-      <Heading2>I create usable and exciting digital solutions for brands of any size.</Heading2>
-      <p>I’m a multi-disciplinary designer and developer working out of Philadelphia. I believe in making companies of any size stand out with clean, intelligent design and hand-crafted, innovative web experiences.</p>
+        <div>
+          <Heading1 paddingBottom="xxsmall">Hi, I'm Frank Luongo</Heading1>
+          <Heading2 paddingBottom="xxsmall">I create usable and exciting digital solutions for brands of any size.</Heading2>
+          <Paragraph paddingBottom="xsmall">I’m a multi-disciplinary designer and developer working out of Philadelphia. I believe in making companies of any size stand out with clean, intelligent design and hand-crafted, innovative web experiences.</Paragraph>
 
-      <div>
-        <Heading2>Contact Me!</Heading2>
-        <a href="mailto:frank@frankluongo.com">frank@frankluongo.com</a>
-      </div>
-      <div>
-        <Heading2>Learn More About Me and My Work</Heading2>
-        <ul>
-          <li>
-            <Link to="/about-me">
-              About Me
-            </Link>
-          </li>
-          <li>
-            <Link to="/my-projects">
-              My Work
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-  </ContentWrapper>
+          <div>
+            <Heading2 paddingBottom="xxsmall">Contact Me!</Heading2>
+            <Paragraph><ContactLink /></Paragraph>
+          </div>
+        </div>
+      </ContentContainer>
+    </Wrapper>
   )
 }
 
-const ContentWrapper = styled.section`
+const ContentContainer = styled(Container)`
   display: grid;
   grid-gap: ${spacing.xsmall};
   grid-template-columns: 1fr;
@@ -54,7 +44,7 @@ const ContentWrapper = styled.section`
 `;
 
 const AboutMeImage = styled.figure`
-  padding-top: 100%;
+  padding-top: 60%;
 
   background-image: url(${myface});
   background-position: center;
@@ -63,8 +53,12 @@ const AboutMeImage = styled.figure`
 
   ${above.small`
     padding-top: 0;
-    height: 100%;
+    height: 60%;
     order: 1;
+  `}
+
+  ${above.medium`
+    height: 100%;
   `}
 `;
 

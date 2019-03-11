@@ -56,9 +56,18 @@ module.exports = {
       }
     },
 
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/projects`,
+        name: 'projects'
+      }
+    },
+
     // ? Transform Markdown into usable code
     'gatsby-transformer-remark',
     `gatsby-plugin-styled-components`,
+    'gatsby-plugin-root-import',
 
 
     // this (optional) plugin enables Progressive Web App + Offline functionality

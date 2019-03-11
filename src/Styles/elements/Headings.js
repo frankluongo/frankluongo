@@ -6,7 +6,11 @@ import { type } from '../utilities/Typography';
 
 export const Heading1 = styled.h1`
   margin: 0;
-  padding-bottom: ${space('xsmall')};
+  ${props => {
+    if (props.paddingBottom) {
+      return `padding-bottom: ${space(props.paddingBottom)}`;
+    }}
+  };
 
   ${type.primaryHeader};
 
@@ -17,16 +21,23 @@ export const Heading1 = styled.h1`
   `}
 `;
 
+// * H2
+// ? ------------------------------------------------------
+
 export const Heading2 = styled.h2`
   margin: 0;
-  padding-bottom: ${space('xsmall')};
+  ${props => {
+    if (props.paddingBottom) {
+      return `padding-bottom: ${space(props.paddingBottom)}`;
+    }}
+  };
 
   ${type.secondaryHeader};
 
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-style: italic;
 
   ${above.small`
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   `}
 `;

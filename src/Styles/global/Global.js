@@ -1,7 +1,18 @@
 import { createGlobalStyle } from 'styled-components';
 import { theme } from '../utilities/Colors';
+import { above } from 'src/Styles/utilities/Breakpoints';
 
 const GlobalStyle = createGlobalStyle`
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+
+  html {
+    font-size: 100%;
+  }
+
   html, body {
     margin: 0;
     padding: 0;
@@ -17,8 +28,31 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  *, *::after, *::before {
-    box-sizing: inherit;
+  /* Resets List in Alphabetical Order */
+
+  a {
+    color: ${theme.blue7};
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  dl,
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
   }
 
   figure {
@@ -28,19 +62,21 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
-  ul,
-  ol,
-  dl {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-  }
-
   img {
     display: block;
 
     max-width: 100%;
+  }
+
+  main {
+    padding-top: 84px;
+
+    ${above.small`
+      padding-top: 100px;
+    `}
+    ${above.medium`
+      padding-top: 146px;
+    `}
   }
 `;
 

@@ -2,10 +2,10 @@ import { css } from 'styled-components';
 
 const size = {
   xsmall: 0,
-  small: 620,
-  medium: 940,
-  large: 1260,
-  xlarge: 1380
+  small: 640,
+  medium: 960,
+  large: 1280,
+  xlarge: 1440
 }
 
 
