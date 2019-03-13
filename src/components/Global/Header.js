@@ -37,6 +37,7 @@ const LogoWrapper = styled.div`
 `;
 
 export default styled(Header)`
+  z-index: 9;
   position: fixed;
 
   background-color: #fff;
