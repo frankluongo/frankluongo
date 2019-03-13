@@ -40,10 +40,9 @@ export default class AboutMe extends Component {
           <Paragraph>I’m the type of person who loves finding ways to improve and optimize everything I do. I believe in always having a student mindset so I’m constantly learning, listening and reading about the things I enjoy. From my daily routines, workouts and eating habits to how I organize my desk, task lists, and personal journal, I’ve tried 10 different ways to do them to find what works best for me.</Paragraph>
           <Paragraph>When I set out to do something, I get it done. I have 1, 5, 10 year goals with 90 day objectives that I review weekly, as well as daily todo lists to help keep me on track. I also know my flaws and shortcomings well enough to set up guardrails against them.</Paragraph>
           <Paragraph>Looking for my work history? <a href={Resume} target="_blank" rel="noopener noreferrer">Check out My Resumé</a></Paragraph>
-
           </div>
           <div>
-            <Heading2 paddingBottom="xsmall">Check Out My Instagram</Heading2>
+            <Heading2 paddingBottom="xsmall">My Latest Grams</Heading2>
             <Feed id="instafeed" />
           </div>
         </AboutMeContent>

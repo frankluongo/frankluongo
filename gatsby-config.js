@@ -84,6 +84,22 @@ module.exports = {
       },
     },
 
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Passion One`,
+            variants: [`700`]
+          },
+          {
+            family: `Vollkorn`,
+            variants: [`400i`]
+          },
+        ],
+      },
+    }
+
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
