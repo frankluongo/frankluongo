@@ -18,13 +18,10 @@ export default class AboutMe extends Component {
     this.displayInstafeed();
   }
 
-
   displayInstafeed = () => {
     let feed = new Instafeed({
           get: 'user',
-          userId: 'frankluongo92',
           clientId: process.env.GATSBY_INSTAFEED_CLIENT_ID,
-          // eslint-disable-next-line
           userId: process.env.GATSBY_INSTAFEED_USER_ID,
           accessToken: process.env.GATSBY_INSTAFEED_ACCESS_TOKEN,
           limit: 5,
