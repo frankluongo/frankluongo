@@ -2,6 +2,7 @@
   slug: "/second-post"
   date: "2019-03-09"
   title: "My Second Post"
+  type: "post"
 ---
 
 # Aye dawg

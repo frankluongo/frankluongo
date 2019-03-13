@@ -69,6 +69,21 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-root-import',
 
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960,
+              linkImagesToOriginal: false
+            },
+          },
+        ],
+      },
+    },
+
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

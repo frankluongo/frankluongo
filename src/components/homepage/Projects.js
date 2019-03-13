@@ -4,6 +4,8 @@ import { Container, Wrapper } from "src/Styles/elements/Container"
 import { Heading2 } from 'src/Styles/elements/Headings';
 import { Paragraph } from 'src/Styles/elements/Paragraphs';
 
+import ProjectsListing from 'src/components/Global/ProjectsListing'
+
 export default class Projects extends Component {
   render() {
     return (
@@ -11,8 +13,9 @@ export default class Projects extends Component {
         <Container>
           <Heading2>My Work</Heading2>
           <Paragraph>
-            I’ve had the pleasure of working with some great companies and teams. Check out some of my recent projects below.
+            I’ve had the pleasure of working with some great brands. Check out some of my recent projects below.
           </Paragraph>
+          <ProjectsListing />
         </Container>
       </Wrapper>
     )

@@ -16,7 +16,7 @@ const BlogIndex = () => {
 // ? ------------------------------------------------------
 
   const GetallPosts = (props) => {
-    let {allMarkdownRemark} = props;
+    let { allMarkdownRemark } = props;
     let list = allMarkdownRemark.edges.map((edge, index) => (
       <li key={index}>
         <Link to={`/blog${edge.node.frontmatter.slug}`}>
@@ -44,14 +44,16 @@ const BlogIndex = () => {
 
 const POSTS_QUERY = graphql`
 query BlogPosts {
-  allMarkdownRemark {
-    totalCount
+  allMarkdownRemark(filter: {
+    frontmatter: {
+      type: {eq: "post"}
+    }
+  }) {
     edges {
       node {
-        excerpt
         frontmatter {
-          title
           slug
+          title
         }
       }
     }

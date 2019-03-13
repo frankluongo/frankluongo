@@ -2,6 +2,7 @@
   slug: "/first-post"
   date: "2019-03-09"
   title: "My First Post"
+  type: "post"
 ---
 
 # Hello

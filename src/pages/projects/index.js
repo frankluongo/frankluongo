@@ -1,15 +1,20 @@
 import React from 'react'
-import Layout from "../../components/layout"
 
-const ProjectIndex = () => (
-  <Layout>
-    <div>
-      <h1>These are da projects</h1>
-      <p>
-        This is me
-      </p>
-    </div>
-  </Layout>
-)
+import Layout from "../../components/layout"
+import ProjectsListing from 'src/components/Global/ProjectsListing';
+import { Wrapper, Container } from 'src/Styles/elements/Container';
+
+const ProjectIndex = () => {
+
+  return (
+    <Layout>
+      <Wrapper>
+        <Container>
+          <ProjectsListing />
+        </Container>
+      </Wrapper>
+    </Layout>
+  )
+}
 
 export default ProjectIndex;
