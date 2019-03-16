@@ -55,6 +55,7 @@ module.exports = {
     // ? Transform Markdown into usable code
     'gatsby-transformer-remark',
     `gatsby-plugin-styled-components`,
+    // ? Root Import
     'gatsby-plugin-root-import',
 
     {
