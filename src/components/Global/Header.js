@@ -3,7 +3,7 @@ import React from "react";
 import styled from 'styled-components';
 
 import Logo from 'src/icons/logo';
-import Menu from './Menu';
+import Menu from './menu';
 import { Container, Wrapper } from 'src/Styles/elements/Container';
 import { above } from 'src/Styles/utilities/Breakpoints';
 

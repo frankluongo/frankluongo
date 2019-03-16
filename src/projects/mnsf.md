@@ -4,8 +4,9 @@
   type: "project"
   photo: "projects/MNSF.jpg"
 ---
-
+<figure class="project-hero">
 <img src="project_photos/MNSF.jpg" alt="M. Night Shyamalan Foundation" />
+</figure>
 
 <br />
 

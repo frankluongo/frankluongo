@@ -4,8 +4,9 @@
   type: "project"
   photo: "projects/PRG.jpg"
 ---
-
+<figure class="project-hero">
 <img src="project_photos/PRG.jpg" alt="Philadelphia Rock Gyms" />
+</figure>
 
 <br />
 

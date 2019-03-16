@@ -4,7 +4,7 @@ import { Container, Wrapper } from "src/Styles/elements/Container"
 import { Heading2 } from 'src/Styles/elements/Headings';
 import { Paragraph } from 'src/Styles/elements/Paragraphs';
 
-import ProjectsListing from 'src/components/Global/ProjectsListing'
+import ProjectsListing from 'src/components/global/projectsListing'
 
 export default class Projects extends Component {
   render() {

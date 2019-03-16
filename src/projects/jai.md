@@ -5,7 +5,9 @@
   photo: "projects/JAI.jpg"
 ---
 
+<figure class="project-hero">
 <img src="project_photos/JAI.jpg" alt="Jewelry Appraisals, Inc" />
+</figure>
 
 <br />
 

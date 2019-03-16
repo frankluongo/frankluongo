@@ -11,7 +11,7 @@ export default function ProjectsListing() {
   const { allMarkdownRemark } = useStaticQuery(PROJECTS_LISTING_QUERY)
 
   const getImage = (nodeHTML) => {
-    let closingSpan = nodeHTML.lastIndexOf("</span>") + 7;
+    let closingSpan = nodeHTML.lastIndexOf("</figure>") + 9;
     let content = nodeHTML.slice(0, closingSpan)
     return content
   }

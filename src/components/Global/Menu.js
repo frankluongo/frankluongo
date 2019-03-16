@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import styled from 'styled-components';
 
-import ContactLink from './ContactLink';
+import ContactLink from './contactLink';
 import { above } from 'src/Styles/utilities/Breakpoints';
 import { type } from 'src/Styles/utilities/Typography';
 

@@ -4,8 +4,9 @@
   type: "project"
   photo: "projects/AMJ.jpg"
 ---
-
+<figure class="project-hero">
 <img src="project_photos/AMJ.jpg" alt="Angela Monaco Jewelry" />
+</figure>
 
 <br />
 

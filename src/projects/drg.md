@@ -4,8 +4,9 @@
   type: "project"
   photo: "projects/DRG.jpg"
 ---
-
-<img src="project_photos/DRG.jpg" alt="DRG Philly" />
+<figure class="project-hero">
+  <img src="project_photos/DRG.jpg" alt="DRG Philly" />
+</figure>
 
 <br />
 
