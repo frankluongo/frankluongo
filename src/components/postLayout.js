@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import { above } from 'src/Styles/utilities/Breakpoints';
 import { space } from 'src/Styles/utilities/Variables';
 import { type } from 'src/Styles/utilities/Typography';
-import Layout from './layout';
+import Layout from 'src/components/layout';
 import { Wrapper, Container } from 'src/Styles/elements/Container';
 import { Heading1 } from 'src/Styles/elements/Headings'
 

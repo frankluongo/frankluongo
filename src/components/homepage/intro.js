@@ -1,10 +1,10 @@
 import React from "react"
 import styled from 'styled-components';
-import myface from "../../images/alt-portrait.jpg"
-import { Heading1, Heading2 } from "../../Styles/elements/Headings";
-import { Paragraph } from "../../Styles/elements/Paragraphs";
-import { spacing } from "../../Styles/utilities/Variables";
-import { above } from '../../Styles/utilities/Breakpoints';
+import myface from "src/images/alt-portrait.jpg"
+import { Heading1, Heading2 } from "src/Styles/elements/Headings";
+import { Paragraph } from "src/Styles/elements/Paragraphs";
+import { spacing } from "src/Styles/utilities/Variables";
+import { above } from 'src/Styles/utilities/Breakpoints';
 
 import { Container, Wrapper } from "../../Styles/elements/Container"
 

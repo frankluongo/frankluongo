@@ -10,8 +10,8 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import { useSpring, animated } from 'react-spring'
 
-import Header from "./global/header"
-import Footer from "./global/footer"
+import Header from "src/components/global/header"
+import Footer from "src/components/global/footer"
 import GlobalStyle from 'src/Styles/global/Global';
 
 const Layout = ({ children }) => {
