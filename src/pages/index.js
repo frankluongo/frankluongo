@@ -4,8 +4,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import Intro from "src/components/homepage/intro";
-import AboutMe from "src/components/homepage/AboutMe";
-import Projects from "src/components/homepage/Projects";
+import AboutMe from "src/components/homepage/aboutMe";
+import Projects from "src/components/homepage/projects";
 
 
 const IndexPage = () => (

@@ -9,8 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import Header from "./Global/Header"
-import Footer from "./Global/Footer"
+import Header from "./global/Header"
+import Footer from "./global/Footer"
 import GlobalStyle from 'src/Styles/global/Global';
 
 const Layout = ({ children }) => (

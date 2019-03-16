@@ -8,7 +8,7 @@ import { above } from '../../Styles/utilities/Breakpoints';
 
 import { Container, Wrapper } from "../../Styles/elements/Container"
 
-import ContactLink from 'src/components/Global/ContactLink';
+import ContactLink from 'src/components/global/ContactLink';
 
 const Intro = () => {
 

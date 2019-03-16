@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 import styled from 'styled-components';
+import SEO from "../components/seo"
 
 import { above } from 'src/Styles/utilities/Breakpoints';
 import { space } from 'src/Styles/utilities/Variables';
@@ -16,6 +17,7 @@ export default class postLayout extends Component {
 
     return (
       <Layout>
+        <SEO title="Home" keywords={[`${markdownRemark.frontmatter.title}`, `application`, `react`]} />
         <Wrapper>
           <MarkdownContainer>
             <Heading1 paddingBottom="small">{ markdownRemark.frontmatter.title }</Heading1>
@@ -54,6 +56,7 @@ h2 {
 
   font-size: 1.2rem;
   font-style: italic;
+  font-weight: normal;
 
   ${above.small`
     font-size: 1.4rem;

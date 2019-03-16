@@ -4,6 +4,10 @@ import { above } from '../utilities/Breakpoints';
 import { space } from '../utilities/Variables';
 import { type } from '../utilities/Typography';
 
+
+// * H1
+// ? ------------------------------------------------------
+
 export const Heading1 = styled.h1`
   margin: 0;
   ${props => {
@@ -36,6 +40,7 @@ export const Heading2 = styled.h2`
 
   font-size: 1.2rem;
   font-style: italic;
+  font-weight: normal;
 
   ${above.small`
     font-size: 1.4rem;
