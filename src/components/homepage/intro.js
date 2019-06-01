@@ -1,13 +1,14 @@
 import React from "react"
 import styled from 'styled-components';
+
 import myface from "src/images/alt-portrait.jpg"
+
 import { Heading1, Heading2 } from "src/Styles/elements/Headings";
+import { Small } from "src/Styles/elements/Small";
 import { Paragraph } from "src/Styles/elements/Paragraphs";
 import { spacing } from "src/Styles/utilities/Variables";
 import { above } from 'src/Styles/utilities/Breakpoints';
-
 import { Container, Wrapper } from "../../Styles/elements/Container"
-
 import ContactLink from 'src/components/global/contactLink';
 
 const Intro = () => {
@@ -18,10 +19,11 @@ const Intro = () => {
         <AboutMeImage />
 
         <div>
-          <Heading1 paddingBottom="xxsmall">Hi, I'm Frank Luongo</Heading1>
-          <Heading2 paddingBottom="xxsmall">I create usable and exciting digital solutions for brands of any size.</Heading2>
-          <Paragraph paddingBottom="xsmall">I’m a multi-disciplinary designer and developer working out of Philadelphia. I believe in making companies of any size stand out with clean, intelligent design and hand-crafted, innovative web experiences.</Paragraph>
-
+          <Heading1 paddingBottom="xsmall">
+            Hi, I'm Frank Luongo
+            <Small>I create usable and exciting digital solutions for brands of any size.</Small>
+          </Heading1>
+          <Paragraph paddingBottom="xsmall">I’m a multi-disciplinary designer and developer who believes in making companies of any size stand out with clean, intelligent design and hand-crafted, innovative web experiences.</Paragraph>
           <div>
             <Heading2 paddingBottom="xxsmall">Contact Me!</Heading2>
             <Paragraph><ContactLink /></Paragraph>

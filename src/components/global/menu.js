@@ -1,15 +1,18 @@
-import { Link } from "gatsby"
 import React from "react"
 import styled from 'styled-components';
 
 import ContactLink from './contactLink';
 import { above } from 'src/Styles/utilities/Breakpoints';
-import { type } from 'src/Styles/utilities/Typography';
+import { FancyLink } from 'src/Styles/elements/FancyLink';
 
 
 const Menu = () => (
   <MenuList>
-    <li><Link to="/">Home</Link></li>
+    <li>
+      <FancyLink to="/">
+        Home
+      </FancyLink>
+    </li>
     {/* <li><Link to="/projects">Projects</Link></li> */}
     {/* <li><Link to="/blog">Blog</Link></li> */}
     <li><ContactLink text="Contact" /></li>
@@ -34,15 +37,6 @@ const MenuList = styled.ul`
   ${above.medium`
     width: 30%;
   `};
-
-  a {
-    ${type.bodyCopy};
-    font-size: 0.875rem;
-
-    ${above.small`
-      font-size: 1rem;
-    `};
-  }
 `;
 
 export default Menu;

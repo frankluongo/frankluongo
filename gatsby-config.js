@@ -78,7 +78,7 @@ module.exports = {
         fonts: [
           {
             family: `Passion One`,
-            variants: [`700`]
+            variants: [`400, 700`]
           },
           {
             family: `Vollkorn`,

@@ -19,9 +19,10 @@ export const Heading1 = styled.h1`
   ${type.primaryHeader};
 
   font-size: 2rem;
+  line-height: 1;
 
   ${above.small`
-    font-size: 3rem;
+    font-size: 4rem;
   `}
 `;
 
@@ -38,11 +39,11 @@ export const Heading2 = styled.h2`
 
   ${type.secondaryHeader};
 
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-style: italic;
   font-weight: normal;
 
   ${above.small`
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   `}
 `;

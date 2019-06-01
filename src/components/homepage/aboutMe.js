@@ -8,6 +8,7 @@ import { Paragraph } from "src/Styles/elements/Paragraphs";
 import { spacing } from "src/Styles/utilities/Variables";
 import { above } from 'src/Styles/utilities/Breakpoints';
 import { theme } from 'src/Styles/utilities/Colors';
+import { FancyLinkTag } from 'src/Styles/elements/FancyLink';
 
 import Resume from 'src/images/FrankLuongoResume.pdf'
 
@@ -34,17 +35,22 @@ export default class AboutMe extends Component {
     return (
       <Wrapper backgroundColor={theme.gray2}>
         <AboutMeContent>
-          <div>
+          <section>
           <Heading2>About Me</Heading2>
-          <Paragraph>I am passionate about making things better; better for the user, for the business and for the world. I love problem solving, researching and testing every solution until we find what’s right. Whether it’s through visual design, UX, development or a combination of disciplines, my ultimate goal is always to build something meaningful.</Paragraph>
-          <Paragraph>I’m the type of person who loves finding ways to improve and optimize everything I do. I believe in always having a student mindset so I’m constantly learning, listening and reading about the things I enjoy. From my daily routines, workouts and eating habits to how I organize my desk, task lists, and personal journal, I’ve tried 10 different ways to do them to find what works best for me.</Paragraph>
-          <Paragraph>When I set out to do something, I get it done. I have 1, 5, 10 year goals with 90 day objectives that I review weekly, as well as daily todo lists to help keep me on track. I also know my flaws and shortcomings well enough to set up guardrails against them.</Paragraph>
-          <Paragraph>Looking for my work history? <a href={Resume} target="_blank" rel="noopener noreferrer">Check out My Resumé</a></Paragraph>
-          </div>
-          <div>
+          <Paragraph>
+            Whether it’s through visual design, UX, development or a combination of disciplines, my ultimate goal is always to build something meaningful that adds value to the user and your business. I find ways to improve and optimize everything I do and I’m constantly learning, listening, reading and absorbing new information. I'm excited and grateful to have the opportunity to do the type of work I get to do.
+          </Paragraph>
+
+          <Paragraph>
+            When I'm not writing code, sketching wireframes and pushing pixels around, I'm typically running, spending time with friends and family or watching Marvel movies.
+          </Paragraph>
+
+          <Paragraph>Looking for my work history? <FancyLinkTag href={Resume} target="_blank" rel="noopener noreferrer">Check out My Resumé</FancyLinkTag></Paragraph>
+          </section>
+          <aside>
             <Heading2 paddingBottom="xsmall">My Latest Grams</Heading2>
             <Feed id="instafeed" />
-          </div>
+          </aside>
         </AboutMeContent>
       </Wrapper>
     )
